@@ -1,507 +1,366 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com -->
-  <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-  }
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }  
-  .jumbotron {
-    background-color: #f4511e;
-    color: #fff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }
-  .carousel-indicators li {
-    border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-    background-color: #f4511e;
-  }
-  .item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-  .item span {
-    font-style: normal;
-  }
-  .panel {
-    border: 1px solid #f4511e; 
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e;
-  }
-  .panel-heading {
-    color: #fff !important;
-    background-color: #f4511e !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-    }
-  }
-  </style>
+  <meta name="description" content="Shaunett Daley designs and develops accessible websites, custom WordPress themes, and CMS-driven hospitality sites. Explore her front-end development portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shaunettdaley.github.io/shaunettDaleyPortfolio/">
+  <meta property="og:title" content="Shaunett Daley | Software Engineer &amp; Front-End Developer">
+  <meta property="og:description" content="Shaunett Daley designs and develops accessible websites, custom WordPress themes, and CMS-driven hospitality sites. Explore her front-end development portfolio.">
+  <meta name="theme-color" content="#0b1423">
+  <title>Shaunett Daley | Software Engineer &amp; Front-End Developer</title>
+  <link rel="canonical" href="https://shaunettdaley.github.io/shaunettDaleyPortfolio/">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/site.css">
+  <script src="./assets/js/site.js" defer></script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="home">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home"><span aria-hidden="true">SD</span> Shaunett Daley</a>
+      <nav aria-label="Primary">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links" hidden>Menu</button>
+        <ul class="nav-links" id="primary-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </header>
 
-<div class="jumbotron text-center">
-  <h1>Company</h1> 
-  <p>We specialize in blablabla</p> 
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer | Front-End Developer | Web Accessibility</p>
+          <h1 id="hero-title">Shaunett<br>Daley<span>.</span></h1>
+          <p class="hero-description">I build accessible, responsive websites and reusable front-end templates, and keep them working in production.</p>
+          <div class="actions">
+            <a class="button button-primary" href="#projects">View featured projects</a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img class="portrait-image" src="./assets/images/shaunett-daley.webp"
+            alt="Shaunett Daley — Software Engineer and Front-End Developer" width="768" height="768">
+          <figcaption>Shaunett Daley</figcaption>
+        </figure>
       </div>
-    </div>
-  </form>
-</div>
+    </section>
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div><br>
-  
-  <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
+    <section class="section section-light" id="about" aria-labelledby="about-title">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">How I Work</h2>
         </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>       
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <div class="prose">
+          <p>I design and develop responsive, accessible websites from concept to implementation. For independent client projects, I create tailored website designs, collaborate with clients through the review and approval process, and transform approved layouts into functional websites using HTML, CSS, JavaScript, and custom WordPress themes.</p>
+          <p>My professional experience also includes reusable front-end architecture, CMS-driven hospitality websites, production troubleshooting, accessibility improvements, and ongoing website maintenance.</p>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap split">
+        <h2 id="experience-title">Experience</h2>
+        <div class="experience-list">
+          <article>
+            <h3>Software engineering &amp; front-end development</h3>
+            <p>Build and rebuild hospitality websites, develop reusable templates, and support live sites through ongoing production maintenance, client-requested enhancements, debugging, and accessibility remediation.</p>
+          </article>
+          <article>
+            <h3>Independent website development &amp; consulting</h3>
+            <p>Lead client discovery, develop responsive websites, recommend user-friendly designs, and advise on branding consistency and digital presence.</p>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section class="section section-light" id="expertise" aria-labelledby="expertise-title">
+      <div class="wrap">
+        <h2 id="expertise-title">Technical expertise</h2>
+        <div class="expertise-grid">
+          <div>
+            <h3>Front-end development</h3>
+            <ul class="tags" role="list">
+              <li>JavaScript</li><li>React</li><li>Next.js</li><li>HTML5</li><li>CSS3</li><li>Sass/SCSS</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Content &amp; templating</h3>
+            <ul class="tags" role="list">
+              <li>Liquid</li><li>PEG CMS</li><li>Cendyn CMS</li><li>Headless CMS</li><li>NovaCMS</li><li>WordPress</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Accessibility &amp; production</h3>
+            <ul class="tags" role="list">
+              <li>Accessibility testing</li><li>Accessibility remediation</li><li>Production troubleshooting</li>
+            </ul>
+          </div>
+          <div>
+            <h3>AI-assisted development</h3>
+            <p>Claude, OpenAI Codex, and Kiro as development assistants.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <h2 id="projects-title">Featured Website Projects &amp; Development Work</h2>
+        <p class="projects-intro">A selection of websites I've built, rebuilt, maintained, and enhanced throughout my professional career and independent consulting work.</p>
+        <!-- Replace project-media placeholders with approved images and descriptive alt text when available. -->
+
+        <section class="project-group" aria-labelledby="cendyn-projects">
+          <h3 id="cendyn-projects">Hospitality &amp; Enterprise Website Development — Selected Cendyn Work</h3>
+          <p>I also maintain production websites, implement client-requested changes, debug technical issues, and remediate accessibility problems.</p>
+          <div class="project-grid">
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/josephine-hotel.webp"
+                alt="Josephine Hotel homepage showing the hotel logo above a guest room with patterned wallpaper" width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Master template &amp; property rebuilds</p>
+                <h4>HappyCulture / Josephine Hotel</h4>
+                <p class="project-description">Built a reusable master template in 2026 using Sass, mixins, and global variables. Used it for Josephine Hotel and six additional hotel property rebuilds.</p>
+                <ul class="tags" role="list" aria-label="Technologies">
+                  <li>Sass</li>
+                </ul>
+                <a class="project-link" href="https://www.hotel-josephine.com/en/" target="_blank" rel="noopener noreferrer">Visit the Josephine Hotel website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/ayres-hotels.webp"
+                alt="Ayres Hotels homepage featuring a guest room and the Port Angeles, Washington destination"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Multi-property development</p>
+                <h4>Ayres Hotels</h4>
+                <p class="project-description">Developed a multi-property hospitality website covering more than 20 properties.</p>
+                <a class="project-link" href="https://www.ayreshotels.com/" target="_blank" rel="noopener noreferrer">Visit the Ayres Hotels website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/secret-bay-hotel.webp"
+                alt="Secret Bay Hotel website showing the Where Rainforest Meets Sea headline and booking form"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website build</p>
+                <h4>Secret Bay Hotel</h4>
+                <p class="project-description">Built the website in 2026.</p>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/cheeca-hotel.webp"
+                alt="Cheeca Lodge &amp; Spa homepage showing an aerial view of the Florida Keys waterfront"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website development</p>
+                <h4>Cheeca Hotel</h4>
+                <p class="project-description">Personally developed the website while working at Cendyn.</p>
+                <a class="project-link" href="https://www.cheeca.com/" target="_blank" rel="noopener noreferrer">Visit the Cheeca Hotel website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/the-maven-hotel.webp"
+                alt="The Maven Hotel homepage showing an aerial view of the hotel and surrounding city blocks"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website development</p>
+                <h4>The Maven Hotel</h4>
+                <p class="project-description">Personally developed the website while working at Cendyn.</p>
+                <a class="project-link" href="https://www.themavenhotel.com/" target="_blank" rel="noopener noreferrer">Visit The Maven Hotel website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/ifa-hotels.webp"
+                alt="IFA Hotels homepage with German navigation and a family running across a wooded lawn"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website development</p>
+                <h4>IFA Hotels</h4>
+                <p class="project-description">Personally developed the website while working at Cendyn.</p>
+                <a class="project-link" href="https://ifahotels.com/" target="_blank" rel="noopener noreferrer">Visit the IFA Hotels website</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="project-group" aria-labelledby="independent-projects">
+          <h3 id="independent-projects">Independent Website Development &amp; Client Solutions</h3>
+          <div class="project-grid">
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/kay-ali-atelier.webp"
+                alt="KAY-ALI Atelier homepage with a gold wordmark and a large orange hibiscus illustration" width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website Design &amp; Custom WordPress Development</p>
+                <h4>KAY-ALI Atelier</h4>
+                <p class="project-description">Personally designed and developed a responsive website with a custom WordPress theme.</p>
+                <ul class="tags" role="list" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>WordPress</li>
+                  <li>Custom Theme Development</li>
+                </ul>
+                <a class="project-link" href="https://kay-aliatelier.com/" target="_blank" rel="noopener noreferrer">Visit the KAY-ALI Atelier website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/bannister-law-firm.webp"
+                alt="Bannister Law Firm homepage with a portrait of the founder beside the legal services introduction"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website Design &amp; Custom WordPress Development</p>
+                <h4>Bannister Law Firm</h4>
+                <p class="project-description">Personally designed and developed a responsive website with a custom WordPress theme.</p>
+                <ul class="tags" role="list" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>WordPress</li>
+                  <li>Custom Theme Development</li>
+                </ul>
+                <a class="project-link" href="https://bannisterlawfirm.com/" target="_blank" rel="noopener noreferrer">Visit the Bannister Law Firm website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/jm-family-creatives.webp"
+                alt="JM Family Creatives homepage showing a red car in the auto insurance banner"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website Design &amp; Custom WordPress Development</p>
+                <h4>JM Family Creatives</h4>
+                <p class="project-description">Personally designed and developed a responsive website with a custom WordPress theme.</p>
+                <ul class="tags" role="list" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>WordPress</li>
+                  <li>Custom Theme Development</li>
+                </ul>
+                <a class="project-link" href="https://jmfamilycreatives.com/" target="_blank" rel="noopener noreferrer">Visit the JM Family Creatives website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/la-vie-home-care.webp"
+                alt="La Vie Home Care homepage showing two caregivers with an older adult"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website Design &amp; Custom WordPress Development</p>
+                <h4>La Vie Home Care</h4>
+                <p class="project-description">Personally designed and developed a responsive website with a custom WordPress theme.</p>
+                <ul class="tags" role="list" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>WordPress</li>
+                  <li>Custom Theme Development</li>
+                </ul>
+                <a class="project-link" href="https://laviehomecare.com/" target="_blank" rel="noopener noreferrer">Visit the La Vie Home Care website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/german-tech-automotive.webp"
+                alt="German Tech Automotive homepage showing German cars on a mountain road" width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website Design &amp; Custom WordPress Development</p>
+                <h4>German Tech Automotive</h4>
+                <p class="project-description">Personally designed and developed a responsive website with a custom WordPress theme.</p>
+                <ul class="tags" role="list" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>WordPress</li>
+                  <li>Custom Theme Development</li>
+                </ul>
+                <a class="project-link" href="https://www.germantechautomotive.com/" target="_blank" rel="noopener noreferrer">Visit the German Tech Automotive website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/srush-insurance.webp"
+                alt="SRUSH Insurance homepage showing a family on a sofa beneath the insurance coverage headline"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website Maintenance &amp; Enhancements</p>
+                <h4>SRUSH Insurance</h4>
+                <p class="project-description">Maintained the WordPress site, updated branding, refined responsive layouts, and integrated Google Reviews.</p>
+                <ul class="tags" role="list" aria-label="Technologies">
+                  <li>WordPress</li>
+                  <li>Google Reviews</li>
+                </ul>
+                <a class="project-link" href="http://srushinsuranceservices.com/" target="_blank" rel="noopener noreferrer">Visit the SRUSH Insurance website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/rookwood-law.webp"
+                alt="Rookwood Law homepage with the firm’s gold logo and a professionalism headline"
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website Design &amp; Custom WordPress Development</p>
+                <h4>Rookwood Law</h4>
+                <p class="project-description">Personally designed and developed a responsive website with a custom WordPress theme.</p>
+                <ul class="tags" role="list" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>WordPress</li>
+                  <li>Custom Theme Development</li>
+                </ul>
+                <a class="project-link" href="https://rookwoodlaw.com/" target="_blank" rel="noopener noreferrer">Visit the Rookwood Law website</a>
+              </div>
+            </article>
+            <article class="project">
+              <img class="project-media project-screenshot" src="./assets/images/projects/bannister-ministry.webp"
+                alt="Bannister Ministry custom WordPress website homepage."
+                width="1440" height="900" loading="lazy" decoding="async">
+              <div class="project-body">
+                <p class="eyebrow">Website Design &amp; Custom WordPress Development</p>
+                <h4><a class="project-title-link" href="https://bannisterministry.org/" target="_blank" rel="noopener noreferrer">Bannister Ministry</a></h4>
+                <p class="project-description">Designed and developed a custom WordPress website, transforming original design concepts into a fully responsive, functional website with custom theme development and frontend implementation.</p>
+                <ul class="tags" role="list" aria-label="Technologies">
+                  <li>Web Design</li>
+                  <li>WordPress</li>
+                  <li>Custom Theme</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Responsive Design</li>
+                </ul>
+                <a class="project-link" href="https://bannisterministry.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Website for Bannister Ministry (opens in a new tab)">Visit Website</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap split">
+        <h2 id="contact-title">Get in touch</h2>
+        <div>
+          <a class="button button-primary" href="mailto:shanthedeveloper@gmail.com">Email Shaunett</a>
+          <p class="resume-status">
+            <a class="button button-secondary" href="./assets/documents/shaunett-daley-resume.pdf"
+              target="_blank" rel="noopener noreferrer">View résumé (PDF)</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Shaunett Daley</span>
+      <a href="#home">Back to top</a>
     </div>
-  </div>
-</div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
-
+  </footer>
 </body>
 </html>
